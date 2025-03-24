@@ -1,0 +1,54 @@
+header {
+  background-image: url("../../resources/img/image1.jpeg");
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+}
+
+.item h2 {
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h3, p {
+  color: black;
+  text-align: left;
+  font-family: Helvetica;
+}
+
+.item img {
+  text-align: left;
+}
+
+.price {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: blue;
+}
+
+.brushes-bg-color {
+  background-color: mediumspringgreen;
+  width: 100%;
+}
+
+.frames-bg-color {
+  background-color: lightcoral;
+  width: 100%;
+}
+
+.paint-bg-color {
+  background-color: skyblue;
+  width: 100%;
+}

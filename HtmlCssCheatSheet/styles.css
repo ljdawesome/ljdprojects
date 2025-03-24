@@ -1,0 +1,42 @@
+* {
+  font-family: Tahoma;
+}
+
+thead {
+  background-color: cyan;
+}
+
+.italics {
+  font-style: italic; 
+}
+
+.header, .subheader {
+  text-align: center;
+}
+
+.header {
+  color: teal;
+  font-size: 28px;
+}
+.subheader {
+  color: cadetblue;
+  font-size: 20px;
+}
+
+table {
+  border: 3px solid darkcyan;
+  width: 650px;
+  margin: 0 auto;
+  border-spacing: 3px;
+  font-size: 14px;
+}
+
+td {
+  border-top: 1px solid darkcyan;
+}
+
+.tag {
+  background-color: gainsboro;
+  font-family: monospace;
+}
+

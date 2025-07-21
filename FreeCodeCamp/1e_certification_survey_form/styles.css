@@ -1,0 +1,43 @@
+#title {
+  text-align: center;
+  font-family: sans-serif;
+}
+#description{
+  text-align: center;
+}
+#survey-form #name{
+  display: block;
+}
+#survey-form #email{
+  display: block;
+}
+#survey-form #number{
+  display: block;
+  width: 50vw;
+}
+#survey-form #name-label{
+  display: block;
+}
+#survey-form #email-label{
+  display: block;
+}
+#survey-form #number-label{
+  display: block;
+}
+#survey-form #dropdown{
+  display: block;
+}
+.inline {
+  width: unset;
+}
+label {
+  display: block;
+}
+textarea{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+#survey-form #submit {
+  display: block;
+}

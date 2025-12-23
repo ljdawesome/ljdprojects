@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trivia Night — Host Mode</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="title">Trivia Night</div>
+        <div class="subtitle">Host Mode • Projector Friendly</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="btnResetSession" class="btn btn-ghost" title="Resets score and returns to selection">Reset Session</button>
+      <button id="btnManageBank" class="btn btn-ghost" title="Seed/clear the question bank">Manage Bank</button>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <!-- Selection Screen -->
+    <section id="screenSelection" class="screen active">
+      <div class="panel">
+        <h1>Choose a category</h1>
+        <p class="muted">
+          Select a single category or shuffle everything.
+          Questions are pulled from your local IndexedDB (Indexed DataBase) question bank.
+        </p>
+
+        <div class="selection-actions">
+          <button id="btnShuffleAll" class="btn btn-primary btn-big">Shuffle All Categories</button>
+          <div class="meta">
+            <span id="bankStatus" class="pill">Bank: …</span>
+            <span id="bankCounts" class="pill">Counts: …</span>
+          </div>
+        </div>
+
+        <div id="categoryGrid" class="grid"></div>
+      </div>
+
+      <footer class="footer">
+        <div class="muted">
+          Tip: Press <span class="kbd">Space</span> to reveal, <span class="kbd">1</span> incorrect, <span class="kbd">2</span> correct.
+        </div>
+      </footer>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="screenQuiz" class="screen">
+      <div class="quiz-top">
+        <div class="scorebox">
+          <div class="scoreline">
+            <div class="label">Score</div>
+            <div id="score" class="value">0</div>
+          </div>
+          <div class="scoreline">
+            <div class="label">Progress</div>
+            <div id="progress" class="value">0 / 0</div>
+          </div>
+          <div class="scoreline">
+            <div class="label">Category</div>
+            <div id="currentCategory" class="value">—</div>
+          </div>
+          <div class="scoreline">
+            <div class="label">Difficulty</div>
+            <div id="currentDifficulty" class="value">—</div>
+          </div>
+        </div>
+
+        <div class="quiz-actions">
+          <button id="btnBackToSelection" class="btn btn-ghost">Back</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="q-meta">
+          <span id="ruleTag" class="pill pill-rule hidden">Closest without going over</span>
+          <span id="mediaTag" class="pill hidden">Media</span>
+        </div>
+
+        <div id="questionText" class="question">…</div>
+
+        <div id="mediaArea" class="media hidden"></div>
+
+        <div class="reveal">
+          <button id="btnReveal" class="btn btn-primary btn-big">Reveal Answer</button>
+        </div>
+
+        <div id="answerArea" class="answer hidden">
+          <div class="answer-label">Answer</div>
+          <div id="answerText" class="answer-text">…</div>
+
+          <div id="scoringButtons" class="scoring hidden">
+            <button id="btnIncorrect" class="btn btn-bad">Incorrect (1)</button>
+            <button id="btnCorrect" class="btn btn-good">Correct (2)</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="muted">
+          Shortcuts: <span class="kbd">Space</span> reveal • <span class="kbd">1</span> incorrect • <span class="kbd">2</span> correct • <span class="kbd">R</span> reset session
+        </div>
+      </footer>
+    </section>
+
+    <!-- Game Over Screen -->
+    <section id="screenGameOver" class="screen">
+      <div class="panel">
+        <h1>Game Over</h1>
+        <p class="muted">Session summary</p>
+
+        <div class="summary">
+          <div class="summary-item">
+            <div class="label">Final score</div>
+            <div id="finalScore" class="value">0</div>
+          </div>
+          <div class="summary-item">
+            <div class="label">Correct</div>
+            <div id="finalCorrect" class="value">0</div>
+          </div>
+          <div class="summary-item">
+            <div class="label">Total</div>
+            <div id="finalTotal" class="value">0</div>
+          </div>
+          <div class="summary-item">
+            <div class="label">Percentage</div>
+            <div id="finalPct" class="value">0%</div>
+          </div>
+        </div>
+
+        <div class="selection-actions">
+          <button id="btnPlayAgain" class="btn btn-primary btn-big">Play Again</button>
+          <button id="btnBackHome" class="btn btn-ghost btn-big">Back to Categories</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bank Modal -->
+    <dialog id="bankDialog" class="dialog">
+      <form method="dialog" class="dialog-inner">
+        <h2>Question Bank (IndexedDB)</h2>
+        <p class="muted">
+          Seed inserts sample questions. Clear deletes all questions.
+          Replace seed data in <code>app.js</code> with your full set later.
+        </p>
+
+        <div class="dialog-actions">
+          <button id="btnSeedBank" class="btn btn-primary">Seed Sample Bank</button>
+          <button id="btnClearBank" class="btn btn-bad">Clear Bank</button>
+          <button class="btn btn-ghost" value="cancel">Close</button>
+        </div>
+
+        <div class="dialog-info">
+          <div id="dialogBankStatus" class="pill">…</div>
+        </div>
+      </form>
+    </dialog>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,168 +1,151 @@
 <!doctype html>
 <html lang="en-AU">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Trivia Night — Host Mode</title>
+  <title>Trivia Night</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-contrast.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="brand">
       <div class="dot"></div>
       <div>
         <div class="title">Trivia Night</div>
-        <div class="subtitle">Host Mode • Projector Friendly</div>
-      </div>
-    </div>
+        <div class="subtitle" id="modeLabel"></div>
 
-    <div class="top-actions">
-      <button id="btnResetSession" class="btn btn-ghost" title="Resets score and returns to selection">Reset Session</button>
-      <button id="btnManageBank" class="btn btn-ghost" title="Seed/clear the question bank">Manage Bank</button>
+      </div>
     </div>
   </header>
 
-  <main id="app" class="app">
-    <!-- Selection Screen -->
+  <main class="app">
+
+    <!-- SETUP -->
     <section id="screenSelection" class="screen active">
       <div class="panel">
-        <h1>Choose a category</h1>
-        <p class="muted">
-          Select a single category or shuffle everything.
-          Questions are pulled from your local IndexedDB (Indexed DataBase) question bank.
-        </p>
+        <h2>Game Setup</h2>
 
-        <div class="selection-actions">
-          <button id="btnShuffleAll" class="btn btn-primary btn-big">Shuffle All Categories</button>
-          <div class="meta">
-            <span id="bankStatus" class="pill">Bank: …</span>
-            <span id="bankCounts" class="pill">Counts: …</span>
+        <div class="team-setup">
+          <div class="team-setup-header">
+            <label>Number of teams</label>
+            <input id="teamCount" type="number" min="1" max="10" value="4" />
           </div>
+
+          <div id="teamNames" class="team-list"></div>
+
+          <button id="btnConfirmTeams" class="btn btn-primary">
+            Lock Teams
+          </button>
+        </div>
+        <!-- Host-only Question Bank Controls -->
+        <div id="hostBankControls" class="panel hidden">
+          <h3>Question Bank Settings</h3>
+
+          <label>
+            Question Bank
+            <select id="bankSelect">
+              <option value="questions.json">Main Bank</option>
+              <option value="questions-50.json">Short-50</option>
+              <option value="questions-test.json">Testing Bank</option>
+            </select>
+          </label>
+
+          <label>
+            Preset
+            <select id="presetSelect">
+              <option value="">Custom</option>
+              <option value="short">Short (~50)</option>
+              <option value="standard">Standard (~75)</option>
+              <option value="long">Long (~100)</option>
+            </select>
+          </label>
+
+          <label>
+            Projector Light Mode
+            <input id="projectorLightToggle" type="checkbox" />
+          </label>
+
+          <h4>Questions per Category</h4>
+          <div id="categoryConfig"></div>
         </div>
 
-        <div id="categoryGrid" class="grid"></div>
+        <hr />
+        <button id="btnShuffleAll" class="btn btn-primary btn-big">Start Game</button>
       </div>
-
-      <footer class="footer">
-        <div class="muted">
-          Tip: Press <span class="kbd">Space</span> to reveal, <span class="kbd">1</span> incorrect, <span class="kbd">2</span> correct.
-        </div>
-      </footer>
     </section>
 
-    <!-- Quiz Screen -->
+    <!-- QUIZ -->
     <section id="screenQuiz" class="screen">
-      <div class="quiz-top">
-        <div class="scorebox">
-          <div class="scoreline">
-            <div class="label">Score</div>
-            <div id="score" class="value">0</div>
+
+      <!-- QUESTION CARD -->
+      <div class="panel quiz-card">
+        <div class="quiz-top">
+          <div>
+            <div id="progress"></div>
+            <div id="currentCategory"></div>
+            <div id="currentDifficulty"></div>
           </div>
-          <div class="scoreline">
-            <div class="label">Progress</div>
-            <div id="progress" class="value">0 / 0</div>
-          </div>
-          <div class="scoreline">
-            <div class="label">Category</div>
-            <div id="currentCategory" class="value">—</div>
-          </div>
-          <div class="scoreline">
-            <div class="label">Difficulty</div>
-            <div id="currentDifficulty" class="value">—</div>
+
+          <div class="host-controls">
+            <div class="timer-controls">
+              <label>
+                Timer (sec)
+                <input id="timerSeconds" type="number" min="5" max="600" value="30" />
+              </label>
+              <button id="btnStartTimer" class="btn">Start Timer</button>
+            </div>
+            <button id="btnToggleRewards" class="btn btn-ghost hidden">Hide Rewards</button>
+            <button id="btnSaveState" class="btn btn-ghost hidden">Save</button>
+            <button id="btnLoadState" class="btn btn-ghost hidden">Load</button>
+            <input id="fileLoadInput" type="file" accept=".json" class="hidden" />
           </div>
         </div>
 
-        <div class="quiz-actions">
-          <button id="btnBackToSelection" class="btn btn-ghost">Back</button>
+        <div id="projectorTimer" class="projector-timer hidden" aria-live="polite"></div>
+
+        <div id="questionText" class="question"></div>
+
+        <div id="mediaArea" class="media-area"></div>
+
+        <button id="btnReveal" class="btn btn-primary btn-big">Reveal Answer</button>
+
+        <div id="answerArea" class="hidden">
+          <div id="answerText" class="answer-text"></div>
+          <div id="hostNotes" class="host-notes hidden"></div>
+          <button id="btnNextQuestion" onclick="nextQuestion()" class="btn btn-primary">
+            Next Question
+          </button>
         </div>
       </div>
 
-      <div class="card">
-        <div class="q-meta">
-          <span id="ruleTag" class="pill pill-rule hidden">Closest without going over</span>
-          <span id="mediaTag" class="pill hidden">Media</span>
-        </div>
-
-        <div id="questionText" class="question">…</div>
-
-        <div id="mediaArea" class="media hidden"></div>
-
-        <div class="reveal">
-          <button id="btnReveal" class="btn btn-primary btn-big">Reveal Answer</button>
-        </div>
-
-        <div id="answerArea" class="answer hidden">
-          <div class="answer-label">Answer</div>
-          <div id="answerText" class="answer-text">…</div>
-
-          <div id="scoringButtons" class="scoring hidden">
-            <button id="btnIncorrect" class="btn btn-bad">Incorrect (1)</button>
-            <button id="btnCorrect" class="btn btn-good">Correct (2)</button>
-          </div>
-        </div>
+      <!-- SCOREBOARD -->
+      <div id="scoreboardSection" class="panel scoreboard-section">
+        <h3 class="scoreboard-title">Scoreboard</h3>
+        <div id="scoreboard"></div>
       </div>
 
-      <footer class="footer">
-        <div class="muted">
-          Shortcuts: <span class="kbd">Space</span> reveal • <span class="kbd">1</span> incorrect • <span class="kbd">2</span> correct • <span class="kbd">R</span> reset session
-        </div>
-      </footer>
+      <!-- HOST REWARDS -->
+      <div id="hostRewardPanel" class="panel hidden">
+        <h2>🎄 Christmas Rewards</h2>
+        <div id="hostRewardLog"></div>
+        <div id="hostTeamRewards"></div>
+      </div>
     </section>
 
-    <!-- Game Over Screen -->
-    <section id="screenGameOver" class="screen">
+    <!-- GAME OVER -->
+    <section id="screenOver" class="screen">
       <div class="panel">
-        <h1>Game Over</h1>
-        <p class="muted">Session summary</p>
-
-        <div class="summary">
-          <div class="summary-item">
-            <div class="label">Final score</div>
-            <div id="finalScore" class="value">0</div>
-          </div>
-          <div class="summary-item">
-            <div class="label">Correct</div>
-            <div id="finalCorrect" class="value">0</div>
-          </div>
-          <div class="summary-item">
-            <div class="label">Total</div>
-            <div id="finalTotal" class="value">0</div>
-          </div>
-          <div class="summary-item">
-            <div class="label">Percentage</div>
-            <div id="finalPct" class="value">0%</div>
-          </div>
-        </div>
-
-        <div class="selection-actions">
-          <button id="btnPlayAgain" class="btn btn-primary btn-big">Play Again</button>
-          <button id="btnBackHome" class="btn btn-ghost btn-big">Back to Categories</button>
-        </div>
+        <h2>Game Over</h2>
+        <div id="finalScores"></div>
+        <button onclick="location.reload()" class="btn btn-ghost">Restart</button>
       </div>
     </section>
 
-    <!-- Bank Modal -->
-    <dialog id="bankDialog" class="dialog">
-      <form method="dialog" class="dialog-inner">
-        <h2>Question Bank (IndexedDB)</h2>
-        <p class="muted">
-          Seed inserts sample questions. Clear deletes all questions.
-          Replace seed data in <code>app.js</code> with your full set later.
-        </p>
-
-        <div class="dialog-actions">
-          <button id="btnSeedBank" class="btn btn-primary">Seed Sample Bank</button>
-          <button id="btnClearBank" class="btn btn-bad">Clear Bank</button>
-          <button class="btn btn-ghost" value="cancel">Close</button>
-        </div>
-
-        <div class="dialog-info">
-          <div id="dialogBankStatus" class="pill">…</div>
-        </div>
-      </form>
-    </dialog>
+    <script src="app.js"></script>
   </main>
-
-  <script src="app.js"></script>
 </body>
+
 </html>

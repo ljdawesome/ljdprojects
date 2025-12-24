@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Science (Physics)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What physical quantity measures how fast an object’s velocity is changing?",
+    "answer": "Acceleration",
+    "hostNotes": "Acceleration is the rate of change of velocity with respect to time, measured in metres per second squared (m/s²). Reference: Khan Academy – Acceleration",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "A car travels at a constant speed of 20 m/s for 15 seconds. How far does it travel in metres?",
+    "answer": "300",
+    "hostNotes": "Distance = speed × time = 20 × 15 = 300 m. Reference: OpenStax Physics – Motion in One Dimension",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What force keeps planets in orbit around the Sun?",
+    "answer": "Gravitational force",
+    "hostNotes": "Gravity provides the centripetal force needed for orbital motion. Reference: NASA – Gravity and Orbits",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "An object of mass 4 kg accelerates at 3 m/s². What is the net force acting on the object in newtons?",
+    "answer": "12",
+    "hostNotes": "Newton’s Second Law: F = ma = 4 × 3 = 12 N. Reference: Khan Academy – Newton’s Laws of Motion",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What happens to the electrical resistance of a metal wire when its temperature increases?",
+    "answer": "It increases",
+    "hostNotes": "In metals, higher temperature causes more lattice vibrations, increasing resistance. Reference: HyperPhysics – Electrical Resistance",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A ball is dropped from rest and falls freely for 4 seconds. How far does it fall in metres? (Use g = 9.8 m/s²)",
+    "answer": "78.4",
+    "hostNotes": "Distance = ½gt² = 0.5 × 9.8 × 4² = 78.4 m. Reference: OpenStax Physics – Free Fall",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What law states that for every action, there is an equal and opposite reaction?",
+    "answer": "Newton’s Third Law of Motion",
+    "hostNotes": "Forces in interactions come in pairs that act on different objects. Reference: Encyclopaedia Britannica – Newton’s Laws",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A 60 W light bulb operates for 5 hours. How much electrical energy does it use in kilowatt-hours?",
+    "answer": "0.3",
+    "hostNotes": "Energy = power × time = 0.06 kW × 5 h = 0.3 kWh. Reference: Khan Academy – Electrical Power",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa’s sleigh has a mass of 500 kg and accelerates at 2 m/s² during take-off. What net force is required in newtons?",
+    "answer": "1000",
+    "hostNotes": "F = ma = 500 × 2 = 1000 N. Reference: Khan Academy – Newton’s Second Law",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Physics)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa notices that metal decorations feel colder than wooden ones, even at the same temperature. Which physical property explains this?",
+    "answer": "Thermal conductivity",
+    "hostNotes": "Metals conduct heat away from the skin faster than wood. Reference: HyperPhysics – Thermal Conductivity",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

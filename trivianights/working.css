@@ -1,0 +1,568 @@
+:root {
+  --bg: #0b0f14;
+  --panel: #101a26;
+  --text: #eaf1ff;
+  --muted: #9fb0c7;
+  --border: rgba(255,255,255,0.15);
+  --primary: #4e8cff;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 16px;
+}
+
+.screen { display: none; }
+.screen.active { display: block; }
+
+.panel {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+}
+
+.btn-big {
+  font-size: 18px;
+  padding: 12px 18px;
+}
+
+.hidden { display: none; }
+
+/* =====================
+   QUESTION
+===================== */
+.quiz-card {
+  text-align: left;
+}
+
+.question {
+  font-size: 30px;
+  margin: 24px 0;
+}
+
+.answer-text {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.media-area {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 6px 0;
+}
+
+.media-area audio {
+  width: min(720px, 100%);
+}
+
+.media-area video {
+  width: min(820px, 100%);
+  max-height: 360px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.15);
+}
+
+/* =====================
+   SCOREBOARD
+===================== */
+.scoreboard-section {
+  margin-top: 20px;
+}
+
+.scoreboard-title {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+#scoreboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.score-row {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-row strong {
+  font-size: 1.05rem;
+}
+
+.score-row span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.score-controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.team-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buff-icons {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.buff-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.95;
+  cursor: help;
+}
+
+.host-notes {
+  margin: 14px auto 0 auto;
+  max-width: 880px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+/* =====================
+   TEAM SETUP
+===================== */
+.team-setup-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+
+.team-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* =====================
+   HOST REWARDS
+===================== */
+#hostTeamRewards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.reward-tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(78,140,255,0.15);
+  border: 1px solid rgba(78,140,255,0.35);
+  margin: 3px;
+}
+
+/* =========================
+   PROJECTOR FULLSCREEN LOCK
+========================= */
+body.projector {
+  overflow: hidden;
+}
+
+body.projector .app {
+  width: 100vw;
+  height: calc(100vh - 56px); /* subtract header height */
+  max-width: none;
+  margin: 0;
+  padding: 24px 32px;
+  box-sizing: border-box;
+}
+
+body.projector .screen {
+  height: 100%;
+}
+
+body.projector .quiz-card,
+body.projector .scoreboard-section {
+  max-height: none;
+}
+
+body.projector .question {
+  font-size: 3rem;
+  line-height: 1.25;
+}
+
+body.projector .answer-text {
+  font-size: 2.4rem;
+  margin-top: 24px;
+}
+
+body.projector #currentCategory,
+body.projector #currentDifficulty,
+body.projector #progress {
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+
+
+
+body.projector .score-row strong {
+  font-size: 1.4rem;
+}
+
+body.projector .score-row span {
+  font-size: 1.6rem;
+}
+
+body.projector .quiz-card {
+  padding: 36px 48px;
+}
+
+body.projector .question {
+  font-size: 2.8rem;
+  line-height: 1.25;
+}
+
+body.projector .answer-text {
+  font-size: 2.2rem;
+}
+
+/* PROJECTOR: LIGHT MODE (overrides color variables when projector + light class applied) */
+body.projector.light {
+  /* improved neutral, accessible light palette */
+  --bg: #f7fafc;        /* very light gray-blue */
+  --panel: #ffffff;     /* card surfaces */
+  --text: #0b2540;      /* dark navy for readable text */
+  --muted: #64748b;     /* cool gray for secondary text */
+  --border: rgba(11,37,64,0.06);
+  --primary: #0b5cff;   /* vivid blue accent */
+}
+
+/* Lift panels and soften borders in light mode for better contrast */
+body.projector.light .panel {
+  box-shadow: 0 8px 24px rgba(11,37,64,0.04);
+  border: 1px solid rgba(11,37,64,0.06);
+}
+
+/* Make primary buttons readable on vivid blue */
+body.projector.light .btn-primary {
+  color: #ffffff;
+}
+
+/* Slightly darker dot for brand in light mode */
+body.projector.light .dot {
+  background: var(--primary);
+}
+
+/* Tweak scoreboard cards to be subtle in light mode */
+body.projector.light .score-row {
+  background: #ffffff;
+  border-color: rgba(11,37,64,0.06);
+}
+
+/* PROJECTOR: CHRISTMAS THEME (white / red / green + decorations) */
+body.projector.christmas {
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --text: #08131a;
+  --muted: #234d20;
+  --border: rgba(2,6,23,0.06);
+  --primary: #b91c1c; /* red accent */
+}
+
+/* decorations: top-left tree and top-right gift, subtle snow overlay */
+/* Use a full-background image for Christmas on projector clients (place image at img/christmas-bg.png)
+   This avoids overlaying header text; the image is centered and covers the viewport. */
+body.projector.christmas {
+  background-image: url('img/christmas-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+/* Subtle falling snow using animated background */
+/*@keyframes snow { from { transform: translateY(-10vh); } to { transform: translateY(110vh); } }
+.snowflake {
+  position: fixed;
+  top: -10vh;
+  left: 50%;
+  font-size: 1.4rem;
+  opacity: 0.9;
+  transform: translateX(-50%);
+  animation: snow 8s linear infinite;
+  z-index: 9998;
+  pointer-events: none;
+}*/
+
+/* Add a small green ribbon under the header when Christmas */
+body.projector.christmas .topbar {
+  border-bottom-color: rgba(185,28,28,0.15);
+  box-shadow: 0 2px 0 0 rgba(34,77,32,0.06) inset;
+}
+
+/* High-contrast scoreboard tags for christmas */
+body.projector.christmas .reward-tag {
+  background: linear-gradient(90deg,#10b98122,#ef444422);
+  border-color: rgba(185,28,28,0.4);
+}
+
+/* Ensure scoreboard always follows question card */
+.quiz-card + .scoreboard-section {
+  margin-top: 28px;
+}
+
+/* Projector: Visual redesign of the question card to match sample UI */
+body.projector .quiz-card {
+  position: relative;
+  background: var(--panel);
+  border-radius: 14px;
+  /* increased top padding to make room for top info and centered icon inside the card */
+  --quiz-card-top: 72px;
+  padding: var(--quiz-card-top) 56px 28px 56px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.5);
+  border: 1px solid rgba(255,255,255,0.03);
+  overflow: visible;
+}
+
+body.projector .quiz-card::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 8px;
+  background: var(--accent, #ff7a18);
+  border-radius: 8px 8px 0 0;
+}
+
+/* hide prior emoji pseudo-element in favor of injected SVG img */
+body.projector .quiz-card::before { display: none !important; }
+
+/* injected icon image */
+.quiz-card .quiz-icon {
+  position: absolute;
+  /* place the icon vertically inside the card above the question, centered within the top padding */
+  top: 48px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: block;
+  background: rgba(255,255,255,0.03);
+  padding: 6px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 20px rgba(2,6,23,0.6);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.quiz-card .quiz-icon img { width: 100%; height: 100%; display: block; border-radius: 8px; }
+
+body.projector .quiz-card .question {
+  font-size: 2.6rem;
+  text-align: center;
+  margin: 18px 0 28px 0;
+  line-height: 1.15;
+  color: #e6f2ff;
+  font-weight: 600;
+}
+
+/* position progress/category/points in the top-left area inside the card */
+body.projector .quiz-top {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+body.projector .quiz-top > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+body.projector .quiz-top .host-controls { pointer-events: none; }
+
+/* Host-only timer controls (sits in the host controls area) */
+.timer-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.timer-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.timer-controls input {
+  width: 88px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+/* Projector countdown clock (only shown while running) */
+.projector-timer {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  background: rgba(2,6,23,0.35);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: var(--text);
+  backdrop-filter: blur(4px);
+}
+
+body.projector.light .projector-timer,
+body.projector.christmas .projector-timer {
+  background: rgba(2,6,23,0.06);
+  border-color: rgba(2,6,23,0.12);
+  color: var(--text);
+}
+
+/* When the timer (or Time's Up) is showing, hide the centered category icon so it doesn't overlap */
+.quiz-card.timer-active .quiz-icon {
+  display: none !important;
+}
+
+body.projector .quiz-card #btnReveal {
+  display: inline-block;
+  margin: 12px auto;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.06);
+  color: #e6f2ff;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5) inset;
+}
+
+body.projector .media-area {
+  margin-top: 8px;
+}
+
+body.projector .quiz-card #answerArea {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ensure answer area is fully hidden until the host reveals it.
+   Specificity is important because we previously set #answerArea to display:flex. */
+.quiz-card #answerArea.hidden { display: none !important; }
+
+body.projector .quiz-card #answerText {
+  background: rgba(255,255,255,0.03);
+  padding: 18px 28px;
+  border-radius: 12px;
+  min-width: 480px;
+  max-width: 880px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--text);
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+/* Answer label vs value styling */
+.answer-label {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 8px;
+}
+
+.answer-value {
+  font-size: 2.2rem;
+  color: #34d399; /* green for the actual answer */
+  font-weight: 800;
+}
+
+/* hide default projector host controls if present */
+body.projector .quiz-card .host-controls { display: none !important; }
+
+/* =========================
+   PROJECTOR: HARD DISABLE HOST BUTTONS
+========================= */
+body.projector #btnReveal,
+body.projector #btnNextQuestion,
+body.projector .host-controls {
+  display: none !important;
+}

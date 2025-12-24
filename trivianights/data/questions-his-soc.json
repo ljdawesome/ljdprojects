@@ -1,0 +1,222 @@
+[
+    {
+        "category": "History (Social)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "What term describes the movement of people from rural areas to cities during the Industrial Revolution?",
+        "answer": "Urbanisation",
+        "hostNotes": "Urbanisation increased rapidly during the Industrial Revolution due to factory-based work. Reference: Encyclopaedia Britannica – Urbanisation",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "What social class expanded significantly during the Industrial Revolution as a result of trade and manufacturing?",
+        "answer": "Middle class",
+        "hostNotes": "The growth of industry led to the rise of merchants, professionals, and factory owners. Reference: Encyclopaedia Britannica – Middle Class",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "What term is used to describe the shared customs, beliefs, and behaviours of a society?",
+        "answer": "Social culture",
+        "hostNotes": "Social culture shapes daily life, traditions, and interactions within communities. Reference: Encyclopaedia Britannica – Culture",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "What 19th-century social movement sought to abolish slavery in Europe and the Americas?",
+        "answer": "Abolitionism",
+        "hostNotes": "Abolitionists campaigned for the end of the transatlantic slave trade and slavery itself. Reference: Encyclopaedia Britannica – Abolitionism",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "What term describes laws and practices that enforced racial segregation, particularly in the southern United States?",
+        "answer": "Jim Crow laws",
+        "hostNotes": "Jim Crow laws enforced racial segregation from the late 19th century until the mid-20th century. Reference: National Archives – Jim Crow",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "Which social reform movement aimed to improve working conditions, wages, and rights for industrial workers?",
+        "answer": "Labour movement",
+        "hostNotes": "The labour movement led to trade unions, workplace safety laws, and labour rights. Reference: Encyclopaedia Britannica – Labour Movement",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "What sociological term refers to the system by which society ranks individuals into hierarchical categories?",
+        "answer": "Social stratification",
+        "hostNotes": "Social stratification is based on factors such as wealth, power, and status. Reference: Encyclopaedia Britannica – Social Stratification",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Which 20th-century social movement sought equal rights for women in areas such as voting, education, and employment?",
+        "answer": "Feminist movement",
+        "hostNotes": "The feminist movement has occurred in multiple waves since the late 19th century. Reference: Encyclopaedia Britannica – Feminism",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "What term describes the long-term social effects experienced by communities following colonisation?",
+        "answer": "Colonial legacy",
+        "hostNotes": "Colonial legacies include social inequality, cultural disruption, and political instability. Reference: Encyclopaedia Britannica – Colonialism",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "History (Social)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "What sociological concept refers to the expectation that individuals conform to the roles associated with their gender in society?",
+        "answer": "Gender roles",
+        "hostNotes": "Gender roles are socially constructed expectations that vary across cultures and time. Reference: Encyclopaedia Britannica – Gender Role",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "Which ancient civilisation is credited with developing the Code of Hammurabi, one of the earliest written law codes?",
+        "answer": "The Babylonian civilisation",
+        "hostNotes": "The Code of Hammurabi dates to around 1754 BCE and established written legal standards. Reference: Encyclopaedia Britannica – Code of Hammurabi",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "Which ancient civilisation built the city of Tenochtitlan, later destroyed by Spanish conquistadors?",
+        "answer": "The Aztec civilisation",
+        "hostNotes": "Tenochtitlan was the capital of the Aztec Empire before Spanish conquest. Reference: Encyclopaedia Britannica – Aztec",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "Which medieval institution dominated religious life in Europe for centuries?",
+        "answer": "The Catholic Church",
+        "hostNotes": "The Church influenced politics, education, and daily life in medieval Europe. Reference: Encyclopaedia Britannica – Medieval Church",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "Which Chinese dynasty built and expanded much of the Great Wall as it exists today?",
+        "answer": "The Ming Dynasty",
+        "hostNotes": "The Ming Dynasty strengthened the wall to defend against northern invasions. Reference: Encyclopaedia Britannica – Ming Dynasty",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "What was the main economic system that dominated Europe during the Middle Ages?",
+        "answer": "Feudalism",
+        "hostNotes": "Feudalism structured land ownership, labour, and loyalty. Reference: Encyclopaedia Britannica – Feudalism",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "Which European power established the largest colonial empire during the 19th century?",
+        "answer": "The British Empire",
+        "hostNotes": "At its height, the British Empire covered about one-quarter of the world’s land surface. Reference: Encyclopaedia Britannica – British Empire",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Which battle in 1066 led to the Norman conquest of England?",
+        "answer": "The Battle of Hastings",
+        "hostNotes": "William the Conqueror defeated King Harold II at Hastings. Reference: Encyclopaedia Britannica – Battle of Hastings",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Which empire was ruled by Emperor Ashoka, who later promoted Buddhism across Asia?",
+        "answer": "The Maurya Empire",
+        "hostNotes": "Ashoka’s reign helped spread Buddhism beyond India. Reference: Encyclopaedia Britannica – Maurya Empire",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Which 19th-century conflict between China and Britain was fought largely over the opium trade?",
+        "answer": "The Opium Wars",
+        "hostNotes": "The Opium Wars led to unequal treaties and foreign influence in China. Reference: Encyclopaedia Britannica – Opium Wars",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "World History",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Which international organisation was founded in 1945 to promote peace and cooperation after World War II?",
+        "answer": "The United Nations",
+        "hostNotes": "The United Nations replaced the League of Nations after World War II. Reference: Encyclopaedia Britannica – United Nations",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    }
+]

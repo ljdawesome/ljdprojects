@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which video game franchise features a plumber named Mario as its main character?",
+    "answer": "Super Mario",
+    "hostNotes": "Mario first appeared in Donkey Kong (1981) and became Nintendo’s mascot. Reference: Encyclopaedia Britannica – Mario",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which company developed the game series 'The Legend of Zelda'?",
+    "answer": "Nintendo",
+    "hostNotes": "Nintendo developed and published The Legend of Zelda series beginning in 1986. Reference: Nintendo – Zelda History",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "In the game Minecraft, what material is required to build a Nether portal?",
+    "answer": "Obsidian",
+    "hostNotes": "A Nether portal frame requires obsidian blocks. Reference: Minecraft Wiki – Nether Portal",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which video game series is set in the fictional land of Hyrule?",
+    "answer": "The Legend of Zelda",
+    "hostNotes": "Hyrule is the primary setting for most Zelda titles. Reference: Zelda Wiki – Hyrule",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which 2004 game popularised the phrase 'Finish Him!' in competitive gaming culture?",
+    "answer": "Mortal Kombat",
+    "hostNotes": "Mortal Kombat became famous for its finishing moves known as Fatalities. Reference: Encyclopaedia Britannica – Mortal Kombat",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which video game console introduced motion-controlled gameplay using handheld controllers in 2006?",
+    "answer": "Nintendo Wii",
+    "hostNotes": "The Wii popularised motion controls in home consoles. Reference: Encyclopaedia Britannica – Nintendo Wii",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which video game is often credited with popularising the battle royale genre in mainstream gaming?",
+    "answer": "PlayerUnknown’s Battlegrounds",
+    "hostNotes": "PUBG helped establish battle royale as a dominant genre. Reference: Encyclopaedia Britannica – Battle Royale Games",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which Japanese game designer created the Metal Gear series?",
+    "answer": "Hideo Kojima",
+    "hostNotes": "Hideo Kojima is known for cinematic storytelling in games. Reference: Encyclopaedia Britannica – Hideo Kojima",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which 1998 video game introduced the character Solid Snake to 3D stealth gameplay on the PlayStation?",
+    "answer": "Metal Gear Solid",
+    "hostNotes": "Metal Gear Solid revolutionised stealth mechanics in 3D games. Reference: Encyclopaedia Britannica – Metal Gear Solid",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Video Games)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which game studio developed the Dark Souls series, known for its high difficulty and environmental storytelling?",
+    "answer": "FromSoftware",
+    "hostNotes": "FromSoftware is known for challenging gameplay and indirect storytelling. Reference: Encyclopaedia Britannica – FromSoftware",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

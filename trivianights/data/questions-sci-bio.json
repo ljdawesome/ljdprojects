@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Science (Biology)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the basic structural and functional unit of all living organisms?",
+    "answer": "Cell",
+    "hostNotes": "All living organisms are made up of one or more cells, which carry out essential life processes. Reference: Encyclopaedia Britannica – Cell",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which organ in the human body is primarily responsible for pumping blood?",
+    "answer": "Heart",
+    "hostNotes": "The heart pumps blood through the circulatory system, delivering oxygen and nutrients. Reference: Khan Academy – Circulatory System",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What process do plants use to convert sunlight into chemical energy?",
+    "answer": "Photosynthesis",
+    "hostNotes": "Photosynthesis uses light energy to produce glucose from carbon dioxide and water. Reference: OpenStax Biology – Photosynthesis",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which part of the cell contains genetic material and controls cell activities?",
+    "answer": "Nucleus",
+    "hostNotes": "The nucleus houses DNA and regulates gene expression. Reference: Encyclopaedia Britannica – Nucleus",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What is the biological term for a group of organisms of the same species living in the same area?",
+    "answer": "Population",
+    "hostNotes": "A population refers to members of the same species within a defined area. Reference: Khan Academy – Population Ecology",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What process allows oxygen to move from the air sacs of the lungs into the bloodstream?",
+    "answer": "Diffusion",
+    "hostNotes": "Diffusion occurs as oxygen moves down its concentration gradient across membranes. Reference: OpenStax Biology – Gas Exchange",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What is the name of the molecule that carries genetic instructions in living organisms?",
+    "answer": "DNA",
+    "hostNotes": "Deoxyribonucleic acid (DNA) stores genetic information used for growth and reproduction. Reference: Encyclopaedia Britannica – DNA",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What term describes an organism that produces its own food using sunlight or chemical energy?",
+    "answer": "Autotroph",
+    "hostNotes": "Autotrophs form the base of most food chains. Reference: Khan Academy – Energy Flow in Ecosystems",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "During winter, some animals sleep for long periods to conserve energy. What is this biological process called?",
+    "answer": "Hibernation",
+    "hostNotes": "Hibernation allows animals to survive periods of low food availability. Reference: Encyclopaedia Britannica – Hibernation",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Biology)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa notices that reindeer grow thicker fur as winter approaches. Which biological process explains this seasonal change?",
+    "answer": "Adaptation",
+    "hostNotes": "Adaptations improve an organism’s ability to survive in its environment. Reference: OpenStax Biology – Adaptation and Evolution",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

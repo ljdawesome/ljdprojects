@@ -1,0 +1,180 @@
+[
+  {
+    "category": "History (Cultural)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What term describes the spread of cultural ideas, practices, and technologies between societies?",
+    "answer": "Cultural diffusion",
+    "hostNotes": "Cultural diffusion occurs through trade, migration, and communication. Reference: Encyclopaedia Britannica – Cultural Diffusion",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which ancient civilisation is credited with developing the Olympic Games?",
+    "answer": "Ancient Greece",
+    "hostNotes": "The Olympic Games began in Olympia around 776 BCE. Reference: Encyclopaedia Britannica – Olympic Games",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What traditional Japanese garment is known for its long sleeves and wrap-around design?",
+    "answer": "Kimono",
+    "hostNotes": "The kimono has been worn in Japan for centuries and holds cultural significance. Reference: Encyclopaedia Britannica – Kimono",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What term describes the blending of elements from different cultures into a new cultural form?",
+    "answer": "Cultural syncretism",
+    "hostNotes": "Syncretism is common in religion, art, and music where cultures interact. Reference: Encyclopaedia Britannica – Syncretism",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which civilisation is known for creating the first known written epic, the Epic of Gilgamesh?",
+    "answer": "Mesopotamian civilisation",
+    "hostNotes": "The Epic of Gilgamesh originates from ancient Mesopotamia. Reference: Encyclopaedia Britannica – Epic of Gilgamesh",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What cultural movement of the 1960s challenged traditional social norms related to dress, music, and authority?",
+    "answer": "Counterculture",
+    "hostNotes": "The counterculture movement was associated with youth, anti-war protests, and new lifestyles. Reference: Encyclopaedia Britannica – Counterculture",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What term describes the unwritten social rules and expectations that govern behaviour within a society?",
+    "answer": "Social norms",
+    "hostNotes": "Social norms shape acceptable behaviour and vary across cultures. Reference: Encyclopaedia Britannica – Social Norm",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which ancient civilisation developed the concept of filial piety as a core cultural value?",
+    "answer": "Ancient China",
+    "hostNotes": "Filial piety is central to Confucian philosophy. Reference: Encyclopaedia Britannica – Filial Piety",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What cultural term refers to judging another culture solely by the values and standards of one’s own culture?",
+    "answer": "Ethnocentrism",
+    "hostNotes": "Ethnocentrism can lead to cultural misunderstanding and bias. Reference: Encyclopaedia Britannica – Ethnocentrism",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which UNESCO designation recognises traditions, rituals, and practices as cultural heritage rather than physical monuments?",
+    "answer": "Intangible cultural heritage",
+    "hostNotes": "This designation protects non-physical cultural traditions worldwide. Reference: UNESCO – Intangible Cultural Heritage",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "Which medieval Christian feast, celebrating the arrival of the Three Wise Men, remains the primary gift-giving day in countries such as Spain and parts of Latin America?",
+    "answer": "Epiphany",
+    "hostNotes": "Epiphany on 6 January commemorates the Magi and is traditionally the main gift-giving day in Spain. Reference: Encyclopaedia Britannica – Epiphany",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "Which ancient Norse festival, associated with midwinter and honouring ancestral spirits, influenced later Scandinavian Christmas traditions?",
+    "answer": "Yule",
+    "hostNotes": "Yule was a pagan midwinter festival later incorporated into Christian Christmas customs. Reference: Encyclopaedia Britannica – Yule",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "Which 4th-century Roman emperor is traditionally associated with officially recognising 25 December as the date of Christmas in the Roman Empire?",
+    "answer": "Emperor Constantine",
+    "hostNotes": "Under Constantine, Christianity gained state support, and 25 December became established as Christmas. Reference: Encyclopaedia Britannica – Christmas",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "What traditional Alpine figure, often depicted as a horned demon who punishes misbehaving children, appears in Christmas folklore in Austria and southern Germany?",
+    "answer": "Krampus",
+    "hostNotes": "Krampusnacht celebrations remain part of Alpine Christmas folklore. Reference: Encyclopaedia Britannica – Krampus",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "Which English Puritan-led government banned the public celebration of Christmas in the mid-17th century, viewing it as unbiblical?",
+    "answer": "The Commonwealth of England",
+    "hostNotes": "Christmas celebrations were banned under Oliver Cromwell’s government from 1647. Reference: British Library – Christmas Banned",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Cultural)",
+    "difficulty": "very-hard",
+    "christmas": true,
+    "question": "Which popular modern Christmas tradition was significantly shaped by 19th-century American advertising and illustration, rather than ancient folklore?",
+    "answer": "The modern image of Santa Claus",
+    "hostNotes": "Illustrations by Thomas Nast and later advertising campaigns shaped Santa’s modern appearance. Reference: Smithsonian Magazine – History of Santa Claus",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+
+]

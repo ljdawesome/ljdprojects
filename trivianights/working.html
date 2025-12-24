@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-AU">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trivia Night</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles-contrast.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="title">Trivia Night</div>
+        <div class="subtitle" id="modeLabel"></div>
+
+      </div>
+    </div>
+  </header>
+
+  <main class="app">
+
+    <!-- SETUP -->
+    <section id="screenSelection" class="screen active">
+      <div class="panel">
+        <h2>Game Setup</h2>
+
+        <div class="team-setup">
+          <div class="team-setup-header">
+            <label>Number of teams</label>
+            <input id="teamCount" type="number" min="1" max="10" value="4" />
+          </div>
+
+          <div id="teamNames" class="team-list"></div>
+
+          <button id="btnConfirmTeams" class="btn btn-primary">
+            Lock Teams
+          </button>
+        </div>
+        <!-- Host-only Question Bank Controls -->
+        <div id="hostBankControls" class="panel hidden">
+          <h3>Question Bank Settings</h3>
+
+          <label>
+            Question Bank
+            <select id="bankSelect">
+              <option value="questions.json">Main Bank</option>
+              <option value="questions-50.json">Short-50</option>
+              <option value="questions-test.json">Testing Bank</option>
+            </select>
+          </label>
+
+          <label>
+            Preset
+            <select id="presetSelect">
+              <option value="">Custom</option>
+              <option value="short">Short (~50)</option>
+              <option value="standard">Standard (~75)</option>
+              <option value="long">Long (~100)</option>
+            </select>
+          </label>
+
+          <label>
+            Projector Light Mode
+            <input id="projectorLightToggle" type="checkbox" />
+          </label>
+
+          <h4>Questions per Category</h4>
+          <div id="categoryConfig"></div>
+        </div>
+
+        <hr />
+        <button id="btnShuffleAll" class="btn btn-primary btn-big">Start Game</button>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section id="screenQuiz" class="screen">
+
+      <!-- QUESTION CARD -->
+      <div class="panel quiz-card">
+        <div class="quiz-top">
+          <div>
+            <div id="progress"></div>
+            <div id="currentCategory"></div>
+            <div id="currentDifficulty"></div>
+          </div>
+
+          <div class="host-controls">
+            <div class="timer-controls">
+              <label>
+                Timer (sec)
+                <input id="timerSeconds" type="number" min="5" max="600" value="30" />
+              </label>
+              <button id="btnStartTimer" class="btn">Start Timer</button>
+            </div>
+            <button id="btnToggleRewards" class="btn btn-ghost hidden">Hide Rewards</button>
+            <button id="btnSaveState" class="btn btn-ghost hidden">Save</button>
+            <button id="btnLoadState" class="btn btn-ghost hidden">Load</button>
+            <input id="fileLoadInput" type="file" accept=".json" class="hidden" />
+          </div>
+        </div>
+
+        <div id="projectorTimer" class="projector-timer hidden" aria-live="polite"></div>
+
+        <div id="questionText" class="question"></div>
+
+        <div id="mediaArea" class="media-area"></div>
+
+        <button id="btnReveal" class="btn btn-primary btn-big">Reveal Answer</button>
+
+        <div id="answerArea" class="hidden">
+          <div id="answerText" class="answer-text"></div>
+          <div id="hostNotes" class="host-notes hidden"></div>
+          <button id="btnNextQuestion" onclick="nextQuestion()" class="btn btn-primary">
+            Next Question
+          </button>
+        </div>
+      </div>
+
+      <!-- SCOREBOARD -->
+      <div id="scoreboardSection" class="panel scoreboard-section">
+        <h3 class="scoreboard-title">Scoreboard</h3>
+        <div id="scoreboard"></div>
+      </div>
+
+      <!-- HOST REWARDS -->
+      <div id="hostRewardPanel" class="panel hidden">
+        <h2>🎄 Christmas Rewards</h2>
+        <div id="hostRewardLog"></div>
+        <div id="hostTeamRewards"></div>
+      </div>
+    </section>
+
+    <!-- GAME OVER -->
+    <section id="screenOver" class="screen">
+      <div class="panel">
+        <h2>Game Over</h2>
+        <div id="finalScores"></div>
+        <button onclick="location.reload()" class="btn btn-ghost">Restart</button>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </main>
+</body>
+
+</html>

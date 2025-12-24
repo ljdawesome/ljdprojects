@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which British band released the album 'Abbey Road' in 1969?",
+    "answer": "The Beatles",
+    "hostNotes": "Abbey Road is one of the most iconic albums in popular music history. Reference: Encyclopaedia Britannica – The Beatles",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which singer is known as the 'Queen of Pop'?",
+    "answer": "Madonna",
+    "hostNotes": "Madonna’s influence spans music, fashion, and pop culture. Reference: Encyclopaedia Britannica – Madonna",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which musical genre originated in Jamaica in the late 1960s?",
+    "answer": "Reggae",
+    "hostNotes": "Reggae is closely associated with Bob Marley and Rastafarian culture. Reference: Encyclopaedia Britannica – Reggae",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which composer wrote the symphony known as the 'Ode to Joy'?",
+    "answer": "Ludwig van Beethoven",
+    "hostNotes": "The 'Ode to Joy' appears in Beethoven’s Ninth Symphony. Reference: Encyclopaedia Britannica – Beethoven",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which 1991 album by Nirvana is widely credited with bringing grunge music into the mainstream?",
+    "answer": "Nevermind",
+    "hostNotes": "Nevermind featured the hit single 'Smells Like Teen Spirit'. Reference: Encyclopaedia Britannica – Nirvana",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which Australian band released the album 'Back in Black' in 1980?",
+    "answer": "AC/DC",
+    "hostNotes": "Back in Black is one of the best-selling albums of all time. Reference: Encyclopaedia Britannica – AC/DC",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which composer is known for developing the twelve-tone technique in classical music?",
+    "answer": "Arnold Schoenberg",
+    "hostNotes": "Schoenberg pioneered the twelve-tone method in the early 20th century. Reference: Encyclopaedia Britannica – Arnold Schoenberg",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which jazz musician is famous for pioneering the use of scat singing?",
+    "answer": "Louis Armstrong",
+    "hostNotes": "Louis Armstrong popularised scat singing in jazz performance. Reference: Encyclopaedia Britannica – Louis Armstrong",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which album by Pink Floyd features the tracks 'Time' and 'Money'?",
+    "answer": "The Dark Side of the Moon",
+    "hostNotes": "The album is one of the most influential progressive rock records. Reference: Encyclopaedia Britannica – Pink Floyd",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Entertainment (Music)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which music festival, first held in 1969, became a defining moment of the counterculture movement?",
+    "answer": "Woodstock",
+    "hostNotes": "Woodstock symbolised the peak of the 1960s counterculture. Reference: Encyclopaedia Britannica – Woodstock",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

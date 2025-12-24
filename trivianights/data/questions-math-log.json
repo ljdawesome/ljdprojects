@@ -1,0 +1,138 @@
+[
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "If all snowmen are cold and some cold things melt, can we logically conclude that all snowmen melt?",
+    "answer": "No",
+    "hostNotes": "The statement 'some cold things melt' does not apply to all cold things, so the conclusion is invalid.",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "A fair coin is tossed once. What is the probability of getting heads?",
+    "answer": "1/2",
+    "hostNotes": "There are two equally likely outcomes: heads or tails.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Three switches control three lights in another room. You may flip the switches once and enter the room once. What is the maximum number of lights you can identify correctly?",
+    "answer": "3",
+    "hostNotes": "Classic logic puzzle using heat from bulbs to identify switches.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "A bag contains 5 red balls and 3 blue balls. One ball is drawn at random. What is the probability that the ball is blue?",
+    "answer": "3/8",
+    "hostNotes": "Probability = favourable outcomes ÷ total outcomes.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "If a statement is false, what must be the truth value of its negation?",
+    "answer": "True",
+    "hostNotes": "A negation always has the opposite truth value of the original statement.",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Two fair dice are rolled. What is the probability that the sum of the numbers is 9?",
+    "answer": "1/9",
+    "hostNotes": "There are 4 favourable outcomes (3+6, 4+5, 5+4, 6+3) out of 36.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "In a group of people, what is the logical name given to an argument where the conclusion does not follow from the premises?",
+    "answer": "Invalid argument",
+    "hostNotes": "Validity concerns structure, not whether statements are true.",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A card is drawn at random from a standard 52-card deck. What is the probability that the card is a heart or a face card?",
+    "answer": "11/26",
+    "hostNotes": "Hearts = 13, face cards = 12, overlap = 3. Total = 22 out of 52.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "A Christmas raffle has 10 tickets, and only 1 ticket wins a prize. What is the probability that a randomly chosen ticket does not win?",
+    "answer": "9/10",
+    "hostNotes": "There are 9 losing tickets out of 10 total tickets.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Logic, Probability)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa makes a logical claim: 'If it snows, then the sleigh flies.' It snowed, but the sleigh did not fly. What logical conclusion can be made?",
+    "answer": "The original statement is false",
+    "hostNotes": "This is a case of modus tollens failure when the implication does not hold.",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+  "id": "math-logic-prob-seed-XX",
+  "category": "Maths (Logic, Probability)",
+  "difficulty": "very-hard",
+  "christmas": true,
+  "question": "Santa’s elves are playing a Christmas board game that uses two fair six-sided dice. On the current turn, one of the elves, Alabaster, needs a total roll of 9 to win the game. If two dice are rolled, what is the probability that Alabaster wins on that turn?",
+  "answer": "1/9",
+  "hostNotes": "There are 36 possible outcomes when rolling two dice. A sum of 9 occurs in 4 ways: (3,6), (4,5), (5,4), (6,3). Probability = 4/36 = 1/9.",
+  "type": "numeric",
+  "numericRule": "closest-without-going-over",
+  "media": null
+},
+{
+  "id": "math-logic-prob-seed-XX",
+  "category": "Maths (Logic, Probability)",
+  "difficulty": "hard",
+  "christmas": false,
+  "question": "A workplace survey of 120 employees asked which drinks they regularly buy: coffee, tea, and energy drinks. Results: 70 buy coffee, 60 buy tea, 50 buy energy drinks. 30 buy both coffee and tea, 25 buy both coffee and energy drinks, 20 buy both tea and energy drinks, and 10 buy all three. How many employees buy none of these drinks?",
+  "answer": "5",
+  "hostNotes": "Use inclusion–exclusion: |C∪T∪E| = 70+60+50 − 30−25−20 + 10 = 115. None = 120 − 115 = 5.",
+  "type": "numeric",
+  "numericRule": "closest-without-going-over",
+  "media": null
+}
+
+
+]

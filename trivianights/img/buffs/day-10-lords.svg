@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Lords">
+  <circle cx="12" cy="12" r="11" fill="#f59e0b"/>
+  <path d="M7.4 10.2l2.2 1.8L12 9.1l2.4 2.9 2.2-1.8 1.1 7H6.3l1.1-7z" fill="#0b1220" opacity="0.78"/>
+  <circle cx="12" cy="8.2" r="1.2" fill="#fff7ed"/>
+</svg>

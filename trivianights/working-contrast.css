@@ -1,0 +1,46 @@
+/* Contrast overrides for projector question & answer readability */
+
+/* Ensure question text is high contrast on projector panels */
+body.projector .quiz-card .question {
+  color: var(--text) !important;
+  text-shadow: none;
+}
+
+/* Make answer label clearly readable and the answer value prominent */
+body.projector .quiz-card #answerArea .answer-label {
+  color: var(--muted) !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+body.projector .quiz-card #answerArea .answer-value {
+  color: #34d399 !important; /* match host green */
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+/* For light projector backgrounds (e.g., christmas/light), ensure contrast */
+body.projector.light .quiz-card .question,
+body.projector.christmas .quiz-card .question {
+  color: var(--text) !important;
+}
+
+body.projector.light .quiz-card #answerArea .answer-value,
+body.projector.christmas .quiz-card #answerArea .answer-value {
+  color: #34d399 !important; /* ensure same green on light/christmas themes */
+}
+
+/* Ensure the answer box has a visible background and border on light/christmas projector themes */
+body.projector.light .quiz-card #answerText,
+body.projector.christmas .quiz-card #answerText {
+  background: rgba(2,6,23,0.06) !important;
+  border: 1px solid rgba(2,6,23,0.12) !important;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.06) !important;
+  color: var(--text) !important;
+}
+
+/* Slightly darker variant for christmas so the green label stands out */
+body.projector.christmas .quiz-card #answerArea .answer-label {
+  color: #234d20 !important;
+  font-weight: 800;
+}

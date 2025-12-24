@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-label="Drummers">
+  <circle cx="12" cy="12" r="11" fill="#ef4444"/>
+  <ellipse cx="12" cy="12" rx="6.4" ry="3.2" fill="#fff7ed"/>
+  <path d="M5.6 12v4.2c0 1.9 2.9 3.4 6.4 3.4s6.4-1.5 6.4-3.4V12" fill="none" stroke="#fff7ed" stroke-width="2"/>
+  <path d="M8.2 8.2l3.1 1.6" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+  <path d="M15.8 8.2l-3.1 1.6" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round" opacity="0.55"/>
+</svg>

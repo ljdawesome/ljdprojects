@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the smallest unit of an element that still retains the properties of that element?",
+    "answer": "Atom",
+    "hostNotes": "An atom is the basic building block of matter that defines an element. Reference: Encyclopaedia Britannica – Atom",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the chemical symbol for sodium?",
+    "answer": "Na",
+    "hostNotes": "Na comes from the Latin name natrium. Reference: Royal Society of Chemistry – Periodic Table",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "How many moles are there in 18 grams of water (H₂O)?",
+    "answer": "1",
+    "hostNotes": "The molar mass of water is 18 g/mol, so 18 g corresponds to 1 mole. Reference: Khan Academy – Mole Concept",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What type of chemical bond is formed when electrons are shared between atoms?",
+    "answer": "Covalent bond",
+    "hostNotes": "In covalent bonding, atoms share electrons to achieve stability. Reference: OpenStax Chemistry – Chemical Bonding",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "A solution contains 2 moles of salt dissolved in 1 litre of water. What is the molarity of the solution?",
+    "answer": "2",
+    "hostNotes": "Molarity = moles of solute ÷ litres of solution = 2 ÷ 1 = 2 M. Reference: Khan Academy – Molarity",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What happens to the rate of a chemical reaction when the temperature is increased?",
+    "answer": "It increases",
+    "hostNotes": "Higher temperature increases particle kinetic energy, leading to more frequent effective collisions. Reference: Encyclopaedia Britannica – Chemical Kinetics",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "How many grams of oxygen are needed to completely react with 2 moles of hydrogen to form water? (O = 16 g/mol)",
+    "answer": "16",
+    "hostNotes": "Reaction: 2H₂ + O₂ → 2H₂O. One mole of O₂ (32 g) reacts with 2 moles of H₂, so half that mass is required per mole of O atoms. Reference: OpenStax Chemistry – Stoichiometry",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What is the term for a substance that speeds up a chemical reaction without being consumed?",
+    "answer": "Catalyst",
+    "hostNotes": "Catalysts lower activation energy and are not used up in the reaction. Reference: Khan Academy – Catalysts",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa stores candy canes made mostly of sugar. Which type of chemical compound best describes sugar?",
+    "answer": "Carbohydrate",
+    "hostNotes": "Sugars are carbohydrates composed mainly of carbon, hydrogen, and oxygen. Reference: Encyclopaedia Britannica – Carbohydrate",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Chemistry)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Santa dissolves 50 grams of salt into water to make a brine for preserving food. If the total solution volume is 1 litre, what is the concentration in grams per litre?",
+    "answer": "50",
+    "hostNotes": "Concentration (g/L) = mass ÷ volume = 50 ÷ 1 = 50 g/L. Reference: OpenStax Chemistry – Solutions",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  }
+]

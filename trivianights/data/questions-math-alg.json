@@ -1,0 +1,189 @@
+[
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "What is the algebraic term for a letter or symbol that represents an unknown value?",
+        "answer": "Variable",
+        "hostNotes": "Common examples are x, y, and n.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "What do you call an algebraic expression that consists of only one term?",
+        "answer": "Monomial",
+        "hostNotes": "Binomial has two terms, polynomial has many.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "What is the algebraic process of finding the value of a variable called when given an equation?",
+        "answer": "Solving the equation",
+        "hostNotes": "This involves isolating the variable on one side.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "What is the name of an equation that contains a squared variable but no higher powers?",
+        "answer": "Quadratic equation",
+        "hostNotes": "General form is ax² + bx + c = 0.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "What is the algebraic term for the set of all possible input values for which an expression is defined?",
+        "answer": "Domain",
+        "hostNotes": "Often restricted by square roots or division by zero.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "What do you call two algebraic expressions that have the same value for all values of the variable?",
+        "answer": "Equivalent expressions",
+        "hostNotes": "They may look different but simplify to the same form.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": true,
+        "question": "A Christmas budget formula always produces the same total cost even when written differently. What algebraic term describes this relationship?",
+        "answer": "Equivalence",
+        "hostNotes": "Different expressions giving the same result are equivalent.",
+        "type": "text",
+        "numericRule": null,
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "Solve for x: 3x + 7 = 25.",
+        "answer": "6",
+        "hostNotes": "Subtract 7 from both sides, then divide by 3.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "Solve for x: 5x = 40.",
+        "answer": "8",
+        "hostNotes": "Divide both sides by 5.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "medium",
+        "christmas": false,
+        "question": "If x − 9 = 14, what is the value of x?",
+        "answer": "23",
+        "hostNotes": "Add 9 to both sides.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "Solve for x: 2(x − 4) = 18.",
+        "answer": "13",
+        "hostNotes": "Expand first: 2x − 8 = 18, then solve.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": false,
+        "question": "Solve for x: 4x + 6 = 2x + 20.",
+        "answer": "7",
+        "hostNotes": "Bring like terms together: 2x = 14.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Solve for x: x² − 9 = 0.",
+        "answer": "3",
+        "hostNotes": "x² = 9 gives x = ±3. Use the positive solution.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Solve for x: 2x² = 50.",
+        "answer": "5",
+        "hostNotes": "Divide by 2 first, then take the square root. Use positive root.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Solve for x: (x/3) + 5 = 11.",
+        "answer": "18",
+        "hostNotes": "Subtract 5, then multiply both sides by 3.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": true,
+        "question": "A Christmas gift costs x dollars. If x + 15 = 60, what is the value of x?",
+        "answer": "45",
+        "hostNotes": "Subtract 15 from both sides.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    },
+    {
+        "category": "Maths (Algebra)",
+        "difficulty": "hard",
+        "christmas": true,
+        "question": "A Christmas party budget follows the equation 3x = 120, where x is the cost per table. What is x?",
+        "answer": "40",
+        "hostNotes": "Divide both sides by 3.",
+        "type": "numeric",
+        "numericRule": "closest-without-going-over",
+        "media": null
+    }
+]

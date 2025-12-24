@@ -1,0 +1,123 @@
+[
+  {
+    "category": "History (Art)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which Italian Renaissance artist painted the ceiling of the Sistine Chapel?",
+    "answer": "Michelangelo",
+    "hostNotes": "Michelangelo painted the Sistine Chapel ceiling between 1508 and 1512. Reference: Encyclopaedia Britannica – Sistine Chapel",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which art movement is characterised by a focus on light, colour, and everyday scenes, and includes artists such as Claude Monet?",
+    "answer": "Impressionism",
+    "hostNotes": "Impressionism emerged in 19th-century France and emphasised light and movement. Reference: Encyclopaedia Britannica – Impressionism",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which famous painting by Leonardo da Vinci depicts a woman with a subtle smile?",
+    "answer": "Mona Lisa",
+    "hostNotes": "The Mona Lisa is housed in the Louvre Museum in Paris. Reference: Louvre Museum – Mona Lisa",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which Dutch artist is known for works such as 'The Night Watch' and his dramatic use of light and shadow?",
+    "answer": "Rembrandt",
+    "hostNotes": "Rembrandt was a master of chiaroscuro in the Dutch Golden Age. Reference: Encyclopaedia Britannica – Rembrandt",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What art movement, pioneered by Pablo Picasso and Georges Braque, broke objects into geometric forms?",
+    "answer": "Cubism",
+    "hostNotes": "Cubism challenged traditional perspective in early 20th-century art. Reference: Encyclopaedia Britannica – Cubism",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which female Mexican artist is known for self-portraits exploring identity, pain, and postcolonialism?",
+    "answer": "Frida Kahlo",
+    "hostNotes": "Frida Kahlo’s work blends realism, symbolism, and Mexican folk art. Reference: Encyclopaedia Britannica – Frida Kahlo",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which art term refers to the strong contrast between light and dark used to create dramatic effects, especially in Baroque painting?",
+    "answer": "Chiaroscuro",
+    "hostNotes": "Chiaroscuro was widely used by artists such as Caravaggio. Reference: Encyclopaedia Britannica – Chiaroscuro",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which 1917 artwork by Marcel Duchamp challenged traditional ideas of art by presenting a urinal as sculpture?",
+    "answer": "Fountain",
+    "hostNotes": "Duchamp’s work is a key example of Dada and conceptual art. Reference: Tate – Marcel Duchamp",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which architectural style is characterised by pointed arches, ribbed vaults, and flying buttresses?",
+    "answer": "Gothic",
+    "hostNotes": "Gothic architecture flourished in Europe from the 12th to 16th centuries. Reference: Encyclopaedia Britannica – Gothic Art",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which Renaissance artist wrote 'The Lives of the Most Excellent Painters, Sculptors, and Architects', one of the first art history texts?",
+    "answer": "Giorgio Vasari",
+    "hostNotes": "Vasari is often considered the first art historian. Reference: Encyclopaedia Britannica – Giorgio Vasari",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Art)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "Which French architect designed the glass pyramid at the Louvre Museum?",
+    "answer": "I. M. Pei",
+    "hostNotes": "The Louvre Pyramid was completed in 1989 and sparked major public debate. Reference: Louvre Museum – Pyramid",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

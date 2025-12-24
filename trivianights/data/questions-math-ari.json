@@ -1,0 +1,124 @@
+[
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the result of 450 ÷ 9?",
+    "answer": "50",
+    "hostNotes": "450 divided by 9 equals 50.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the value of 37 × 8?",
+    "answer": "296",
+    "hostNotes": "30×8 = 240 and 7×8 = 56. Total = 296.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is 1,200 minus 475?",
+    "answer": "725",
+    "hostNotes": "Subtract in steps: 1200 − 400 − 75.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What is 15% of 260?",
+    "answer": "39",
+    "hostNotes": "10% = 26, 5% = 13. Total = 39.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "If a number is increased by 20% to become 180, what was the original number?",
+    "answer": "150",
+    "hostNotes": "180 ÷ 1.2 = 150.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What is the average of the numbers 18, 27, 35, 40, and 50?",
+    "answer": "34",
+    "hostNotes": "Sum = 170. Divide by 5.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A number is divided by 4, then increased by 12, giving a result of 37. What is the original number?",
+    "answer": "100",
+    "hostNotes": "Work backwards: 37 − 12 = 25, then 25 × 4 = 100.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What is the smallest whole number that leaves a remainder of 3 when divided by both 5 and 8?",
+    "answer": "43",
+    "hostNotes": "LCM of 5 and 8 is 40. Add 3 to get 43.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "A box of Christmas crackers costs $48 for 6 boxes. What is the cost of one box in dollars?",
+    "answer": "8",
+    "hostNotes": "48 ÷ 6 = 8.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "category": "Maths (Arithmetic)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "A Christmas party budget of $900 is shared equally among 12 tables. How much budget does each table receive in dollars?",
+    "answer": "75",
+    "hostNotes": "900 ÷ 12 = 75.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+        "id": "math-ari-seed-02",
+        "category": "Maths (Arithmetic)",
+        "difficulty": "very-hard",
+        "christmas": false,
+        "question": "Jan is buying a Gundam model in Tokyo with an original price of 2,600 JPY. A store sticker advertises a 15% discount, but the cashier charges him 2,500 JPY instead. Realising the discount was applied incorrectly, how much more did Jan pay compared to the correct discounted price?",
+        "answer": "290 JPY",
+        "hostNotes": "15% of 2,600 = 390. Correct price = 2,600 − 390 = 2,210 JPY. Charged 2,500 JPY, so overpaid by 290 JPY.",
+        "type": "numeric",
+        "numericRule": null,
+        "media": null
+    }
+]

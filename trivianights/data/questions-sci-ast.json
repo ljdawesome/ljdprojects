@@ -1,0 +1,112 @@
+[
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What is the name of the star at the centre of our solar system?",
+    "answer": "The Sun",
+    "hostNotes": "The Sun is a medium-sized star that provides light and heat to the solar system. Reference: NASA – The Sun",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which planet in our solar system is known for having the most prominent ring system?",
+    "answer": "Saturn",
+    "hostNotes": "Saturn’s rings are made mostly of ice and rock. Reference: NASA – Saturn",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What force keeps planets moving in orbit around stars?",
+    "answer": "Gravity",
+    "hostNotes": "Gravitational attraction provides the centripetal force required for orbital motion. Reference: NASA – Gravity",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What term describes a rocky object that enters Earth’s atmosphere and burns up, often producing a streak of light in the sky?",
+    "answer": "Meteor",
+    "hostNotes": "Meteors are often referred to as “shooting stars.” Reference: Encyclopaedia Britannica – Meteor",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What is the name of the galaxy that contains our solar system?",
+    "answer": "Milky Way",
+    "hostNotes": "The Milky Way is a barred spiral galaxy containing billions of stars. Reference: NASA – Milky Way Galaxy",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What astronomical term describes a star that suddenly increases greatly in brightness due to a massive explosion?",
+    "answer": "Supernova",
+    "hostNotes": "Supernovae occur at the end of a star’s life cycle and can briefly outshine entire galaxies. Reference: Encyclopaedia Britannica – Supernova",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What is the name of the region around a black hole beyond which nothing, not even light, can escape?",
+    "answer": "Event horizon",
+    "hostNotes": "The event horizon marks the boundary of no return around a black hole. Reference: NASA – Black Holes",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What term describes the apparent shift in position of a nearby star caused by Earth’s motion around the Sun?",
+    "answer": "Parallax",
+    "hostNotes": "Stellar parallax is used to measure distances to nearby stars. Reference: ESA – Stellar Parallax",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "On Christmas Eve, Santa navigates using a bright star traditionally said to guide travellers. Which star is commonly known as the North Star?",
+    "answer": "Polaris",
+    "hostNotes": "Polaris lies nearly above Earth’s North Pole and has been used for navigation for centuries. Reference: NASA – Polaris",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "Science (Astronomy)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "During a clear Christmas night, Santa notices the Moon appears fully illuminated. What phase of the Moon is this called?",
+    "answer": "Full Moon",
+    "hostNotes": "A full moon occurs when the Earth is between the Sun and the Moon. Reference: NASA – Moon Phases",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "category": "History (Political)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "What document, signed in 1215, limited the power of the English king and is considered a foundation of modern democracy?",
+    "answer": "Magna Carta",
+    "hostNotes": "The Magna Carta established the principle that the monarch is subject to the law. Reference: Encyclopaedia Britannica – Magna Carta",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Which system of government divides power between the executive, legislative, and judicial branches?",
+    "answer": "Separation of powers",
+    "hostNotes": "The separation of powers prevents any one branch from becoming too powerful. Reference: Encyclopaedia Britannica – Separation of Powers",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "Who was the first President of the United States?",
+    "answer": "George Washington",
+    "hostNotes": "George Washington served as the first U.S. president from 1789 to 1797. Reference: National Archives – George Washington",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "What political ideology advocates for a classless society and collective ownership of the means of production?",
+    "answer": "Communism",
+    "hostNotes": "Communism is most closely associated with the ideas of Karl Marx and Friedrich Engels. Reference: Encyclopaedia Britannica – Communism",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "In Australia, what is the name of the formal document that established the nation as a federation in 1901?",
+    "answer": "Australian Constitution",
+    "hostNotes": "The Australian Constitution came into effect on 1 January 1901. Reference: National Archives of Australia – Constitution",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What term describes a form of government in which power is held by a small, elite group of people?",
+    "answer": "Oligarchy",
+    "hostNotes": "An oligarchy concentrates political power in the hands of a few individuals. Reference: Encyclopaedia Britannica – Oligarchy",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "Which 1648 treaties are often credited with establishing the concept of national sovereignty in international relations?",
+    "answer": "Peace of Westphalia",
+    "hostNotes": "The Peace of Westphalia helped shape the modern system of sovereign states. Reference: Encyclopaedia Britannica – Peace of Westphalia",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "What political term describes the right to vote in elections?",
+    "answer": "Suffrage",
+    "hostNotes": "Universal suffrage refers to the right of all adult citizens to vote. Reference: Encyclopaedia Britannica – Suffrage",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "During the Christmas Truce of 1914, soldiers temporarily stopped fighting during which major global conflict?",
+    "answer": "World War I",
+    "hostNotes": "The Christmas Truce occurred along parts of the Western Front in 1914. Reference: Imperial War Museums – Christmas Truce",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  },
+  {
+    "category": "History (Political)",
+    "difficulty": "hard",
+    "christmas": true,
+    "question": "Christmas Day 1991 marked the formal dissolution of which major political entity?",
+    "answer": "The Soviet Union",
+    "hostNotes": "The Soviet Union officially dissolved on 25 December 1991. Reference: Encyclopaedia Britannica – Soviet Union",
+    "type": "text",
+    "numericRule": null,
+    "media": null
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "math-geo-seed-02",
+    "category": "Maths (Geometry)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "A rectangular sheet of wrapping paper is 24 cm by 15 cm. What is its area in square centimetres?",
+    "answer": "360 square centimetres",
+    "hostNotes": "Area of a rectangle = length × width = 24 × 15 = 360.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-03",
+    "category": "Maths (Geometry)",
+    "difficulty": "medium",
+    "christmas": false,
+    "question": "A regular hexagon-shaped coaster has a perimeter of 48 cm. What is the length of one side in centimetres?",
+    "answer": "8 cm",
+    "hostNotes": "A regular hexagon has 6 equal sides. Side = 48 ÷ 6 = 8 cm.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-04",
+    "category": "Maths (Geometry)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "A square tile has a diagonal of 20 cm. What is the area of the tile in square centimetres? (Give the exact value, not a decimal.)",
+    "answer": "200 square centimetres",
+    "hostNotes": "Diagonal = s√2 ⇒ s = 20/√2 = 10√2. Area = s² = (10√2)² = 200.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-05",
+    "category": "Maths (Geometry)",
+    "difficulty": "hard",
+    "christmas": false,
+    "question": "A right-angled triangle has legs of 7 cm and 24 cm. What is the length of the hypotenuse in centimetres?",
+    "answer": "25 cm",
+    "hostNotes": "Use Pythagoras: √(7² + 24²) = √(49 + 576) = √625 = 25.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-06",
+    "category": "Maths (Geometry)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A cylinder has radius 6 cm and height 11 cm. What is its volume in cubic centimetres? (Use π ≈ 3.14)",
+    "answer": "1243.44 cubic centimetres",
+    "hostNotes": "Volume = πr²h = 3.14 × 6² × 11 = 3.14 × 36 × 11 = 1243.44.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-07",
+    "category": "Maths (Geometry)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "A sphere has a radius of 7 cm. What is its volume in cubic centimetres? (Use π ≈ 3.14)",
+    "answer": "1436.76 cubic centimetres",
+    "hostNotes": "Volume = 4/3 πr³ = 4/3 × 3.14 × 7³ = 4/3 × 3.14 × 343 = 1436.76.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  },
+  {
+    "id": "math-geo-seed-08",
+    "category": "Science (Biology)",
+    "difficulty": "very-hard",
+    "christmas": false,
+    "question": "In a circle of radius 13 cm, a chord is 10 cm long. How far (in centimetres) is the chord from the centre of the circle?",
+    "answer": "12 cm",
+    "hostNotes": "Half-chord = 5 cm. Right triangle: d² + 5² = 13² ⇒ d = √(169 − 25) = √144 = 12.",
+    "type": "numeric",
+    "numericRule": "closest-without-going-over",
+    "media": null
+  }
+]

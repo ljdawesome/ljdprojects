@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <rect width="64" height="64" rx="12" fill="#16a34a"/>
-  <g fill="#fff" transform="translate(10,10)">
-    <path d="M14 0c-1 8-6 12-6 18 0 6 6 10 12 10s12-4 12-10c0-6-5-10-6-18h-12z"/>
-    <circle cx="14" cy="28" r="2"/>
+  <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M26 14h12"/>
+    <path d="M30 14v14l-10 18a10 10 0 0 0 9 15h6a10 10 0 0 0 9-15l-10-18V14"/>
+    <path d="M24 38h16"/>
+  </g>
+  <g fill="#fff" opacity="0.95">
+    <circle cx="40" cy="22" r="2"/>
+    <circle cx="23" cy="26" r="1.6"/>
+    <circle cx="41" cy="46" r="1.8"/>
   </g>
 </svg>

@@ -48,6 +48,86 @@ body {
   margin-bottom: 18px;
 }
 
+/* =====================
+   GAME OVER
+===================== */
+#screenOver .panel {
+  border: 1px solid var(--border);
+}
+
+#finalScores {
+  display: grid;
+  gap: 12px;
+  margin: 14px 0 18px 0;
+}
+
+.gameover-winner {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(78,140,255,0.35);
+  background: rgba(78,140,255,0.10);
+}
+
+.winner-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.winner-name {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.winner-score {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.final-list {
+  display: grid;
+  gap: 10px;
+}
+
+.final-row {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.05);
+}
+
+.final-row.is-winner {
+  border-color: rgba(78,140,255,0.45);
+  background: rgba(78,140,255,0.08);
+}
+
+.rank-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+}
+
+.final-name {
+  font-weight: 700;
+}
+
+.final-score {
+  font-weight: 800;
+}
+
 .btn {
   padding: 8px 14px;
   border-radius: 8px;

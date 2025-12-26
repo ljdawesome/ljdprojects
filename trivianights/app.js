@@ -1223,8 +1223,59 @@ function renderGameOver() {
   const final = $("#finalScores");
   if (!final) return;
 
+  final.innerHTML = "";
+
   const ranked = state.teams.slice().sort((a, b) => b.score - a.score);
-  final.innerHTML = ranked.map((t, i) => `<div>${i + 1}. ${t.name}: ${t.score}</div>`).join("");
+  const winner = ranked[0] || null;
+
+  if (winner) {
+    const banner = document.createElement("div");
+    banner.className = "gameover-winner";
+
+    const label = document.createElement("div");
+    label.className = "winner-label";
+    label.textContent = "Winner";
+
+    const name = document.createElement("div");
+    name.className = "winner-name";
+    name.textContent = winner.name;
+
+    const score = document.createElement("div");
+    score.className = "winner-score";
+    score.textContent = `${winner.score} pts`;
+
+    banner.appendChild(label);
+    banner.appendChild(name);
+    banner.appendChild(score);
+    final.appendChild(banner);
+  }
+
+  const list = document.createElement("div");
+  list.className = "final-list";
+
+  ranked.forEach((team, idx) => {
+    const row = document.createElement("div");
+    row.className = "final-row" + (idx === 0 ? " is-winner" : "");
+
+    const rank = document.createElement("div");
+    rank.className = "rank-badge";
+    rank.textContent = String(idx + 1);
+
+    const name = document.createElement("div");
+    name.className = "final-name";
+    name.textContent = team.name;
+
+    const score = document.createElement("div");
+    score.className = "final-score";
+    score.textContent = `${team.score} pts`;
+
+    row.appendChild(rank);
+    row.appendChild(name);
+    row.appendChild(score);
+    list.appendChild(row);
+  });
+
+  final.appendChild(list);
 }
 
 function applyProjectorLightClass() {

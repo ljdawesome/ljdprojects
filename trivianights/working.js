@@ -93,8 +93,18 @@ async function loadSelectedQuestionBank() {
   const select = document.getElementById("bankSelect");
   const filename = select?.value || "questions.json";
 
-  const res = await fetch(`data/${filename}`);
-  if (!res.ok) throw new Error("Failed to load question bank");
+  if (location.protocol === "file:") {
+    throw new Error(
+      "This app must be served over http(s) (not opened as a local file). " +
+      "If you're using WAMP, open: http://localhost/ljdprojects/trivianights/"
+    );
+  }
+
+  const url = `data/${filename}`;
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) {
+    throw new Error(`Failed to load question bank (${res.status} ${res.statusText}) from ${url}`);
+  }
 
   return await res.json();
 }
@@ -338,6 +348,14 @@ function sanitiseMedia(m) {
     };
   }
 
+  if (type === "image") {
+    return {
+      type: "image",
+      src,
+      title: m.title ? String(m.title) : ""
+    };
+  }
+
   return null;
 }
 
@@ -402,6 +420,34 @@ function renderQuestionMedia(q) {
       area.appendChild(wrap);
     } else {
       area.appendChild(video);
+    }
+    return;
+  }
+
+  if (media.type === "image" && media.src) {
+    const img = document.createElement("img");
+    img.src = media.src;
+    img.alt = media.title ? String(media.title) : "";
+    img.loading = "lazy";
+    img.decoding = "async";
+
+    if (media.title) {
+      const label = document.createElement("div");
+      label.style.fontSize = "12px";
+      label.style.opacity = "0.8";
+      label.style.marginBottom = "6px";
+      label.textContent = media.title;
+
+      const wrap = document.createElement("div");
+      wrap.style.display = "flex";
+      wrap.style.flexDirection = "column";
+      wrap.style.alignItems = "center";
+      wrap.style.width = "100%";
+      wrap.appendChild(label);
+      wrap.appendChild(img);
+      area.appendChild(wrap);
+    } else {
+      area.appendChild(img);
     }
   }
 }
@@ -489,18 +535,20 @@ function basePoints(q) {
  * Rewards
  *************************************************/
 const CHRISTMAS_REWARDS = [
-  { day: 1, name: "Partridge", general: ["Maths"], specific: ["Maths (Logic, Probability)"] },
-  { day: 2, name: "Turtle Doves", general: ["Science"], specific: ["Science (Biology)"] },
-  { day: 3, name: "French Hens", general: ["History"], specific: ["History (Art)"] },
-  { day: 4, name: "Calling Birds", general: ["Entertainment"], specific: ["Entertainment (Music)"] },
-  { day: 5, name: "Golden Rings", general: ["WorldCulture"], specific: ["World and Culture (Famous People, Landmarks)"] },
-  { day: 6, name: "Geese", general: ["Science"], specific: ["Science (Physics)"] },
-  { day: 7, name: "Swans", general: ["Mythology"], specific: ["Mythology (Greek and Roman)"] },
-  { day: 8, name: "Maids", general: ["Maths"], specific: ["Maths (Arithmetic)"] },
-  { day: 9, name: "Ladies", general: ["PopCulture"], specific: ["Pop Culture (Sports)"] },
-  { day: 10, name: "Lords", general: ["History"], specific: ["History (Political)"] },
-  { day: 11, name: "Pipers", general: ["WorldCulture"], specific: ["World and Culture (Geography, Language)"] },
-  { day: 12, name: "Drummers", general: ["Entertainment"], specific: ["Entertainment (Film)"] }
+  // Rewards grant ONLY general-category bonuses.
+  // Each day can grant up to two +1 bonuses across two general categories.
+  { day: 1, name: "Partridge", general: ["Maths", "Science"] },
+  { day: 2, name: "Turtle Doves", general: ["History", "WorldCulture"] },
+  { day: 3, name: "French Hens", general: ["PopCulture", "Mythology"] },
+  { day: 4, name: "Calling Birds", general: ["Entertainment", "Science"] },
+  { day: 5, name: "Golden Rings", general: ["Maths", "History"] },
+  { day: 6, name: "Geese", general: ["WorldCulture", "Science"] },
+  { day: 7, name: "Swans", general: ["Mythology", "History"] },
+  { day: 8, name: "Maids", general: ["Entertainment", "WorldCulture"] },
+  { day: 9, name: "Dancing Ladies", general: ["Entertainment", "PopCulture"] },
+  { day: 10, name: "Leaping Lords", general: ["Maths", "PopCulture"] },
+  { day: 11, name: "Pipers", general: ["Science", "Mythology"] },
+  { day: 12, name: "Drummers", general: ["WorldCulture", "PopCulture"] }
 ];
 
 const REWARD_BY_DAY = Object.fromEntries(CHRISTMAS_REWARDS.map((r) => [String(r.day), r]));
@@ -526,18 +574,24 @@ function rewardIconPath(day) {
   return `img/buffs/day-${dd}-${slug}.svg`;
 }
 
+function prettyGeneralCategory(g) {
+  const labels = {
+    PopCulture: "Pop Culture",
+    WorldCulture: "World & Culture"
+  };
+  return labels[g] || g;
+}
+
 function rewardTooltipText(day) {
   const r = REWARD_BY_DAY[String(day)];
   if (!r) return "";
-  const gen = (r.general || []).join(", ");
-  const spec = (r.specific || []).join(", ");
-  return `${r.name} (Day ${r.day})\nGeneral buff: +1 for ${gen || "—"}\nSpecific buff: +2 for ${spec || "—"}`;
+  const gen = (r.general || []).map(prettyGeneralCategory).join(", ");
+  return `${r.name} (Day ${r.day})\n+1 bonus for: ${gen || "—"}`;
 }
 
 function emptyRewardsState() {
   return {
     general: Object.fromEntries(Object.keys(GENERAL_CATEGORIES).map((g) => [g, false])),
-    specific: {},
     // Track which Christmas reward "days" are currently active for this team.
     // day -> true
     days: {}
@@ -545,11 +599,9 @@ function emptyRewardsState() {
 }
 
 function applyReward(team, reward) {
-  for (const g of reward.general || []) {
+  // General-only buffs (up to two categories)
+  for (const g of (reward?.general || []).slice(0, 2)) {
     if (team.rewards.general[g] !== undefined) team.rewards.general[g] = true;
-  }
-  for (const s of reward.specific || []) {
-    team.rewards.specific[s] = true;
   }
 
   if (!team.rewards.days) team.rewards.days = {};
@@ -557,11 +609,8 @@ function applyReward(team, reward) {
 }
 
 function revokeReward(team, reward) {
-  for (const g of reward.general || []) {
+  for (const g of (reward?.general || []).slice(0, 2)) {
     if (team.rewards.general[g] !== undefined) team.rewards.general[g] = false;
-  }
-  for (const s of reward.specific || []) {
-    delete team.rewards.specific[s];
   }
 
   if (team.rewards.days && reward?.day != null) {
@@ -574,19 +623,17 @@ function revokeReward(team, reward) {
  *************************************************/
 function scoreBreakdown(team, q) {
   // Christmas: always 1 point, buffs do NOT apply to the Christmas question itself
-  if (isChristmasQuestion(q)) return { total: 1, base: 1, general: 0, specific: 0 };
+  if (isChristmasQuestion(q)) return { total: 1, base: 1, general: 0 };
 
   const base = basePoints(q);
   const g = getGeneralCategory(q.category);
 
   const generalBonus = (g && team.rewards.general[g]) ? 1 : 0;
-  const specificBonus = team.rewards.specific?.[q.category] ? 2 : 0;
 
   return {
-    total: base + generalBonus + specificBonus,
+    total: base + generalBonus,
     base,
-    general: generalBonus,
-    specific: specificBonus
+    general: generalBonus
   };
 }
 
@@ -624,7 +671,6 @@ function sanitiseState(s) {
       score: clamp0(t?.score),
       rewards: {
         general: { ...emptyRewardsState().general, ...(t?.rewards?.general || {}) },
-        specific: { ...(t?.rewards?.specific || {}) },
         days: { ...(t?.rewards?.days || {}) }
       }
     })) : [],
@@ -957,7 +1003,7 @@ function renderScoreboard() {
       hint.style.fontSize = "12px";
       hint.style.opacity = "0.85";
       hint.style.marginTop = "4px";
-      hint.textContent = `This question: ${b.total} = base ${b.base} + general ${b.general} + specific ${b.specific}`;
+      hint.textContent = `This question: ${b.total} = base ${b.base} + general ${b.general}`;
       row.appendChild(hint);
     }
   }
@@ -1020,15 +1066,7 @@ function renderHostRewardsPanel() {
       if (!enabled) continue;
       const tag = document.createElement("span");
       tag.className = "reward-tag";
-      tag.textContent = `General: ${g} (+1)`;
-      tags.appendChild(tag);
-    }
-
-    const specificKeys = Object.keys(team.rewards.specific || {}).filter((k) => team.rewards.specific[k]);
-    for (const k of specificKeys) {
-      const tag = document.createElement("span");
-      tag.className = "reward-tag";
-      tag.textContent = `Specific: ${k} (+2)`;
+      tag.textContent = `General: ${prettyGeneralCategory(g)} (+1)`;
       tags.appendChild(tag);
     }
 
@@ -1377,7 +1415,6 @@ function bindEvents() {
     renderAll();
   } catch (err) {
     console.error(err);
-    alert("Unable to load question bank.");
+    alert(`Unable to load question bank.\n\n${err?.message || String(err)}`);
   }
 })();
-
